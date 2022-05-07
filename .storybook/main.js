@@ -9,10 +9,6 @@ module.exports = {
   core: {
     builder: "@storybook/builder-vite",
   },
-  babel: (config) => {
-    config.presets[2][1] = { runtime: "automatic" }; // <-- this is the change
-    return config;
-  },
   features: {
     emotionAlias: false, // <----------------------------- here
   },
