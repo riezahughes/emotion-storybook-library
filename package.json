@@ -1,6 +1,6 @@
 {
   "name": "@riezahughes/emotion-storybook-library",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "First attempt at a module library",
   "license": "MIT",
   "main": "main.js",
@@ -35,5 +35,7 @@
     "typescript": "^4.6.3",
     "vite": "^2.9.7"
   },
-  "files": ["lib/**/*"]
+  "files": [
+    "lib/**/*"
+  ]
 }
