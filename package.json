@@ -1,9 +1,10 @@
 {
   "name": "@riezahughes/emotion-storybook-library",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "First attempt at a module library",
   "license": "MIT",
-  "main": "main.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc",
@@ -13,8 +14,8 @@
   },
   "dependencies": {
     "@emotion-icons/material": "^3.14.0",
-    "@emotion/react": "^10.9.0",
-    "@emotion/styled": "^10.8.1",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
