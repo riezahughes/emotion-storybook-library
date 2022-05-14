@@ -54,3 +54,5 @@ export const DarkToggle = ({ isDark = false, ...props }: DarkToggleProps) => {
     </ToggleContainer>
   );
 };
+
+export default DarkToggle;

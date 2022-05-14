@@ -42,3 +42,5 @@ export const Card = ({
 
   return <Div>{text}</Div>;
 };
+
+export default Card;

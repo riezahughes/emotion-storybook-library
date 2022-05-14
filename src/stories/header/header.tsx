@@ -18,3 +18,5 @@ export const Header = ({
 
   return <Header>{children}</Header>;
 };
+
+export default Header;

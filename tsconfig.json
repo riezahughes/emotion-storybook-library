@@ -13,10 +13,13 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx",
-    "types": ["vite/client", "@emotion/react/types/css-prop"]
+    "types": ["vite/client", "@emotion/react/types/css-prop"],
+    "declaration": false,
+    "outDir": "./lib"
   },
   "include": ["src"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,10 +1,12 @@
 {
-  "name": "emotion-storybook-library",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@riezahughes/emotion-storybook-library",
+  "version": "0.0.2",
+  "description": "First attempt at a module library",
+  "license": "MIT",
+  "main": "main.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -32,5 +34,6 @@
     "babel-loader": "^8.2.5",
     "typescript": "^4.6.3",
     "vite": "^2.9.7"
-  }
+  },
+  "files": ["lib/**/*"]
 }
