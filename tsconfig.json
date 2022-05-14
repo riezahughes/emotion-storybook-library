@@ -16,10 +16,14 @@
     "noEmit": false,
     "jsx": "react-jsx",
     "types": ["vite/client", "@emotion/react/types/css-prop"],
-    "declaration": false,
+    "declaration": true,
     "outDir": "./lib"
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules",
+    "src/stories/*/*.stories.tsx",
+    "src/stories/*.stories.tsx"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
