@@ -10,6 +10,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@emotion-icons/material": "^3.14.0",
     "@emotion/react": "^10.9.0",
     "@emotion/styled": "^10.8.1",
     "react": "^17.0.0",
