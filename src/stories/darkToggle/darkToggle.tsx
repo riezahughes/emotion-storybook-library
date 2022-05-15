@@ -4,8 +4,13 @@ import { LightMode, DarkMode } from "@emotion-icons/material";
 
 interface DarkToggleProps {
   isDark: boolean;
+  onClick: (event: React.MouseEvent<SVGSVGElement>) => void;
 }
-export const DarkToggle = ({ isDark = false, ...props }: DarkToggleProps) => {
+export const DarkToggle = ({
+  isDark = false,
+  onClick,
+  ...props
+}: DarkToggleProps) => {
   const ToggleContainer = styled.div`
     max-width: 100px;
     display: flex;
@@ -35,7 +40,7 @@ export const DarkToggle = ({ isDark = false, ...props }: DarkToggleProps) => {
       {isDark ? (
         <>
           <Div>
-            <DarkMode title="Dark Mode" size="18" />
+            <DarkMode title="Dark Mode" size="18" onClick={onClick} />
           </Div>
           <Div>
             <small>DARK THEME</small>
@@ -44,7 +49,7 @@ export const DarkToggle = ({ isDark = false, ...props }: DarkToggleProps) => {
       ) : (
         <>
           <Div>
-            <LightMode title="Light Mode" size="18" />
+            <LightMode title="Light Mode" size="18" onClick={onClick} />
           </Div>
           <Div>
             <small>LIGHT THEME</small>
